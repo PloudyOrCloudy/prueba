@@ -13,4 +13,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Validar HTML
-        run: npx --yes html-validate index.html
+        run: npx --yes html-validate Tarea 5.html
