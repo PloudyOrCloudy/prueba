@@ -1,0 +1,16 @@
+name: Validar HTML
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate-html:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Validar HTML
+        run: npx --yes html-validate index.html
